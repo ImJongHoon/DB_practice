@@ -14,6 +14,8 @@ public class main {
             Connection con = DriverManager.getConnection(url, userName,password);
             Statement stmt = con.createStatement();
 
+            stmt.executeUpdate("INSERT into Customer Values(1, '임종훈', '010-0000-0000')");
+
             con.close();
         }catch(Exception e){ System.out.println(e);}
     }
