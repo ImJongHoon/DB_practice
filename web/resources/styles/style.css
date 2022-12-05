@@ -1,0 +1,50 @@
+@import "reset.css";
+@import "variables.css";
+
+/*screens*/
+@import "screens/index.css";
+@import "screens/customer.css";
+@import "screens/lawyer.css";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #F9F7F7;
+}
+
+main{
+    background-color: white;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid var(--main-gray);
+    height: 32px;
+    width: 60%;
+    margin-bottom: 16px;
+}
+
+form{
+    height: 60vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit_btn{
+    height: 32px;
+    width: 60%;
+    border: none;
+    background-color: #3F72AF;
+    color: #F9F7F7;
+}
+
+.submit_btn:hover{
+    cursor: pointer;
+}
